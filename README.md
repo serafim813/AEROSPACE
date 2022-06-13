@@ -1,4 +1,4 @@
-# Task_Bewise
+# AEROSPACE
 
 
 ## Запуск:
@@ -12,9 +12,7 @@
 ## Описание:
 Проект полностью развёртывается в докере
 
-- post v1/user {"questions_num": integer}  -  полученные ответы сохраняются в базе данных
-- Запрос post http://0.0.0.0:5000/v1/user body {"questions_num": 1} 
-- Ответ    [{"id":121269,"answer":"category","question":"You must be cognizant of misspellings in a catagory like this, otherwise you might be embarrassed","date":"2014-02-14"}]
+Если используется Postman, то collection лежат в папке postman
 
 ## Стек
 
@@ -25,4 +23,4 @@
 - FastAPI
 - Uvicorn
 - httpx или aiohttp
-# AEROSPACE
+
