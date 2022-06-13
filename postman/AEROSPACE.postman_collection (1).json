@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "7a3d5b09-ebe3-46e8-afe9-c75653c964ce",
+		"name": "AEROSPACE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Добавить сельхоз поле в формате GeoJSON",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"type\":\"Feature\",\"properties\":{\"name\":\"Temple\",\"cartodb_id\":3},\"geometry\":{\"type\":\"MultiPolygon\",\"coordinates\":[[[2.36236,48.867905],[2.364764,48.866436],[2.366694,48.86319],[2.368454,48.85582],[2.364335,48.856441],[2.361631,48.857262],[2.358626,48.858757],[2.356825,48.860111],[2.353391,48.861214],[2.350172,48.862034],[2.354249,48.869286],[2.36236,48.867905]]]}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/v1/user",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удалить сельхоз поле в формате GeoJSON",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/v1/users/Temple",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"users",
+						"Temple"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получить все сельскохозяйственные поля",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/v1/users",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получить изображение поля с NDVI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/files/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"files",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
